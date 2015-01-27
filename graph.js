@@ -12,7 +12,7 @@ var svg = d3.select("body").append("svg")
     .attr("width", width)
     .attr("height", height);
 
-d3.json("miserables.json", function(error, graph) {
+d3.json("test.json", function(error, graph) {
   force
       .nodes(graph.nodes)
       .links(graph.links)
