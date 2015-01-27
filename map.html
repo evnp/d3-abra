@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Place searches</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+      html, body, #map-canvas {
+        height: 100%;
+        margin: 0px;
+        padding: 0px
+      }
+    </style>
+    
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places"></script>
+    <script type="text/javascript">
+    $(function () {
+var map;
+var infowindow;
+
+function initialize() {
+  var canada = new google.maps.LatLng(56, -96);
+
+  map = new google.maps.Map(document.getElementById('map-canvas'), {
+    center: canada,
+    zoom: 4
+  });
+
+  
+new google.maps.Marker({position: new google.maps.LatLng(49.897565, -97.136073), map: map, title:"Health in Common, Abra Brynne"});
+
+
+new google.maps.Marker({position: new google.maps.LatLng(49.28127, -123.08867), map: map, title:"Ecotrust Canada, Amanda Barney"});
+
+
+new google.maps.Marker({position: new google.maps.LatLng(45.502244, -73.574976), map: map, title:"McConnell Family Foundation The J W, Beth Hunter"});
+
+
+new google.maps.Marker({position: new google.maps.LatLng(43.647884, -79.394823), map: map, title:"Meal Exchange, Dana Lahey"});
+
+
+new google.maps.Marker({position: new google.maps.LatLng(49.897565, -97.136073), map: map, title:"Health in Common, Daniel Kanu"});
+
+
+new google.maps.Marker({position: new google.maps.LatLng(44.8272168, -62.9467952), map: map, title:"Hook Lake, Dave Adler"});
+
+
+new google.maps.Marker({position: new google.maps.LatLng(6.296679, 99.722471), map: map, title:"Casa Del Mar Langkawi, Dave Kranenburg"});
+
+
+new google.maps.Marker({position: new google.maps.LatLng(49.274795, -123.082421), map: map, title:"Greater Vancouver Food Bank, Diane Collis"});
+
+
+new google.maps.Marker({position: new google.maps.LatLng(49.873802, -119.59098), map: map, title:"Mountain Valley Farm, Erin Harris"});
+
+
+new google.maps.Marker({position: new google.maps.LatLng(52.126207, -106.672569), map: map, title:"Saskatchewan Waste Reduction Council, Gordon Enns"});
+
+
+new google.maps.Marker({position: new google.maps.LatLng(45.511132, -73.577717), map: map, title:"Food Secure Canada, Gwen Cottle"});
+
+
+new google.maps.Marker({position: new google.maps.LatLng(45.092489, -64.364129), map: map, title:"Sustainable Housing, Hayley Lapalme"});
+
+
+new google.maps.Marker({position: new google.maps.LatLng(45.119711, -72.968975), map: map, title:"Saveurs D'Antan Des Cantons Inc, Isabelle Lemieux"});
+
+
+new google.maps.Marker({position: new google.maps.LatLng(49.28464, -123.096857), map: map, title:"Living Oceans Society, Jenna Stoner"});
+
+
+new google.maps.Marker({position: new google.maps.LatLng(45.511132, -73.577717), map: map, title:"Food Secure Canada, Jennifer Reynolds"});
+
+
+new google.maps.Marker({position: new google.maps.LatLng(49.204023, -122.926146), map: map, title:"T Buck Suzuki Environmental Foundation, Jim McIsaac"});
+
+
+new google.maps.Marker({position: new google.maps.LatLng(54.0453042, -2.801844), map: map, title:"National Farmers Union, Joan Brady"});
+
+
+new google.maps.Marker({position: new google.maps.LatLng(44.650112, -63.484201), map: map, title:"Atlantic Policy Congress Of First Nation Chiefs Secretariat Inc, Jordan Nikoloyuk"});
+
+
+new google.maps.Marker({position: new google.maps.LatLng(44.656639, -63.596239), map: map, title:"Ecology Action Centre, Justin Cantafio"});
+
+
+new google.maps.Marker({position: new google.maps.LatLng(49.897565, -97.136073), map: map, title:"Health in Common, Kathleen Gibson"});
+
+
+new google.maps.Marker({position: new google.maps.LatLng(43.64743, -79.386774), map: map, title:"Ketchum Canada, Kelly Hodgins"});
+
+
+new google.maps.Marker({position: new google.maps.LatLng(43.656362, -79.379586), map: map, title:"Toronto Food Policy Council, Lauren Baker"});
+
+
+new google.maps.Marker({position: new google.maps.LatLng(46.09381, -64.747473), map: map, title:"La Récolte de Chez-nous, Mathieu D'Astous"});
+
+
+new google.maps.Marker({position: new google.maps.LatLng(45.427552,-75.575327), map: map, title:"Just Food Co-op, Moe Garahan"});
+
+
+new google.maps.Marker({position: new google.maps.LatLng(46.491415, -80.990723), map: map, title:"Eat Local Sudbury Co-operative, Peggy Baillie"});
+
+
+new google.maps.Marker({position: new google.maps.LatLng(51.253775, -85.3232139), map: map, title:"Ontario, Ricardo Ramirez"});
+
+
+new google.maps.Marker({position: new google.maps.LatLng(49.24323,-123.105378), map: map, title:"Vancouver Farmer's Market, Tara McDonald"});
+
+
+new google.maps.Marker({position: new google.maps.LatLng(49.890003, -97.147097), map: map, title:"Law Society Of Manitoba, Lydia Carpenter"});
+
+
+new google.maps.Marker({position: new google.maps.LatLng(43.647884, -79.394823), map: map, title:"Meal Exchange, Sarah Archibald"});
+
+}
+initialize();
+});
+    </script>
+  </head>
+  <body>
+    <div id="map-canvas"></div>
+  </body>
+</html>
