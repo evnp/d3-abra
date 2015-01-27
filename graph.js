@@ -1,5 +1,5 @@
-var width = 960,
-    height = 500;
+var width = $('body').width(),
+    height = $('body').height();
 
 var color = d3.scale.category20();
 
