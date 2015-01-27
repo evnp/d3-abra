@@ -9,6 +9,8 @@ var color = d3.scale.ordinal()
 
 var force = d3.layout.force()
     .charge(-3000)
+    .friction(0.5)
+    .linkStrength(0.8)
     .linkDistance(200)
     .size([width, height]);
 
