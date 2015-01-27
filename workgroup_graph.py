@@ -17,7 +17,7 @@ for fn in glob.glob("csvs/WorkingGroup*"):
   with open(fn, 'rU') as group_file:
     groups[group_id] = group_name
     for row in csv.reader(group_file):
-      name = row[1].strip() + ' ' + row[0].strip()
+      name = row[0].strip() + ' ' + row[1].strip()
       name_key = name.lower()
       if name_key in people:
         people[name_key][ID_KEY] += group_id

@@ -1,0 +1,28 @@
+{
+  "meetings": [
+    {
+      "data": [
+        31, 
+        36, 
+        29
+      ], 
+      "name": "First Time"
+    }, 
+    {
+      "data": [
+        0, 
+        10, 
+        9
+      ], 
+      "name": "Consecutive Attendence"
+    }, 
+    {
+      "data": [
+        0, 
+        0, 
+        3
+      ], 
+      "name": "Skipped a Year"
+    }
+  ]
+}
