@@ -6,12 +6,14 @@ import re
 ID_KEY = 'idkey'
 REAL_NAME_KEY = 'namekey'
 
+print "Reading files!"
+
 group_id = 1
 people = {}
 groups = {}
 for fn in glob.glob("csvs/WorkingGroup*"):
   group_name = label = re.sub("([A-Z])"," \g<0>",fn.split('_')[1].split('.')[0])
-  print group_id
+  print "Processing Working Group: %s!" % group_name
   with open(fn, 'rU') as group_file:
     groups[group_id] = group_name
     for row in csv.reader(group_file):
@@ -26,10 +28,11 @@ for fn in glob.glob("csvs/WorkingGroup*"):
         }
   group_id <<= 1
 
+print "Constructing Graph!"
+
 nodes = []
 edges = []
 people = people.values()
-print people
 for index, person in enumerate(people):
   nodes.append({
     "name": person[REAL_NAME_KEY],
@@ -51,7 +54,7 @@ for index, person in enumerate(people):
 with open("test.json", "w+") as output:
   output.write(json.dumps({
     "nodes" : nodes,
-    "edges" : edges
-  }))
+    "links" : edges
+  }, indent=2))
   output.close()
 
