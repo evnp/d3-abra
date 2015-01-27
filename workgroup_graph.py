@@ -12,7 +12,7 @@ group_id = 1
 people = {}
 groups = {}
 for fn in glob.glob("csvs/WorkingGroup*"):
-  group_name = label = re.sub("([A-Z])"," \g<0>",fn.split('_')[1].split('.')[0])
+  group_name = re.sub("([A-Z])"," \g<0>",fn.split('_')[1].split('.')[0])
   print "Processing Working Group: %s!" % group_name
   with open(fn, 'rU') as group_file:
     groups[group_id] = group_name
